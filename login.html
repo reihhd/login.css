@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autentikasi Kata Sandi</title>
+    <link href="login.css" rel="stylesheet">
+</head>
+<body>
+    <h2>I LOVE YOU!</h2>
+    <form onsubmit="checkPassword(event)">
+        <input type="password" id="passwordInput" placeholder=" " required>
+        <button type="submit">Masuk</button>
+    </form>
+
+    <script>
+        function checkPassword(event) {
+            event.preventDefault(); // Mencegah form untuk melakukan submit
+
+            // Ambil nilai yang dimasukkan pengguna
+            var password = document.getElementById('passwordInput').value;
+
+            // Cek kata sandi (contoh kata sandi sederhana)
+            if (password === 'sayangesha') {
+                // Jika kata sandi benar, redirect ke halaman lain
+                window.location.href = 'Main.html';
+            } else {
+                // Jika kata sandi salah, tampilkan pesan kesalahan
+                alert('Only Rei and Kei know the Password!');
+            }
+        }
+    </script>
+</body>
+</html>
