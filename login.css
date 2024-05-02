@@ -1,0 +1,68 @@
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Menggunakan font default Arial */
+}
+
+/* Container styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(90, 90, 90);
+  ; /* Warna latar belakang */
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Lebar container */
+}
+
+/* Heading styling */
+h2 {
+  color: #333;
+  margin-bottom: 0px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="password"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color:rgb(230, 54, 0); /* Warna tombol */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Warna tombol saat dihover */
+}
+
+/* Responsiveness untuk layar kecil */
+@media (max-width: 400px) {
+  .container {
+      width: 90%; /* Mengubah lebar container untuk layar kecil */
+  }
+}
